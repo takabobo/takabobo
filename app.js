@@ -216,7 +216,7 @@ const quiz = [
         ], 
         correct: '⭕️'
     },{
-        question:"ゾイでの最高IQを10とすると「デスレックス」のIQは何になる❓",
+        question:"ゾイドの最高IQを10とすると「デスレックス」のIQは何になる❓",
         answer:[
             '10',
             '3',
