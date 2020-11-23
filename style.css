@@ -1,0 +1,47 @@
+h1{
+    color: rgb(46, 165, 52);
+    font-size: 50px;
+}
+body{
+    width: 800px;
+    margin: 50px auto;
+}
+
+
+div{
+    color: #607D8B;
+    /* background-color: black; */
+    border: 1px solid green;
+    padding: 30px;
+    margin-bottom: 50px;
+
+}
+.quiz_box{
+    background-color: snow;
+}
+.q-box{
+    font-size: 150%;
+    background-color: beige;
+
+}
+
+.btn_cont{
+    text-align: center;
+    background-color: cadetblue;
+}
+
+button{
+    /* width: 100px; */
+    width: 80%;
+    height: 80px;
+    font-size: 120%;
+    margin-top: 10px;
+    
+}
+
+.jj{
+    color: red;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
