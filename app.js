@@ -308,13 +308,64 @@ const quiz = [
 	        'アントニオ猪木'
 		], 
 		correct: '織田　信長'
-		}
+		},
+		{
+		question:"織田信長が立てたお城は何❓",
+	    answer:[
+	        '安土城',
+	        '大阪城',
+	        '名古屋城',
+	        '松本城'
+	    ], 
+		correct: '安土城'
+		},
+		{
+		question:"織田信長が立てた安土城はどこにあるの❓",
+	    answer:[
+	        '滋賀県',
+	        '京都府',
+	        '岐阜県',
+	        '豊岡村'
+	    ], 
+		correct: '滋賀県'
+		},
+		{
+		question:"本能寺の変は何年にあったのかな❓",
+	    answer:[
+	        '1582年',
+	        '1600年',
+	        '1992年',
+	        '1301年'
+	    ], 
+		correct: '1582年'
+		},
+		{
+		question:"本能寺の変で織田信長を戦った武将の名前は❓",
+	    answer:[
+	        '明智　光秀',
+	        '豊臣　秀吉',
+	        '毛利　元就',
+	        '今川　義元'
+	    ], 
+		correct: '明智　光秀'
+		},
+		{
+		question:"織田信長が敗れた場所は",
+	    answer:[
+	        '本能寺',
+	        '銀閣寺',
+	        '善光寺',
+	        '法隆寺'
+	    ], 
+		correct: '本能寺'
+	},
+
 
 	
 
 
 ];
-// ｛
+// {
 // question:"",
 //     answer:[
 //         '',
@@ -323,7 +374,7 @@ const quiz = [
 //         ''
 //     ], 
 //     correct: ''
-//      ｝
+//      }
 // console.log(quiz);
 
 // 配列を作る
@@ -336,7 +387,7 @@ const button_length = $button.length;
 let button_index = 0
 // クイズの問題数を定義しています
 
-console.log(quiz.length);
+console.log(quiz.length + 'クイズの問題数です😄');
 let t = quiz.length
 // console.log(t);
 
