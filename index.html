@@ -3,35 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>takabob_quiz</title>
+    <title>タカボボクイズ</title>
     <link rel="stylesheet" href="style.css">
-    <!-- 音関係 -->
-    <audio id='kieru' preload="auto">
-        <source src="kieru.mp3" type="audio/mp3">
-    </audio>
-    <audio id="don" preload="auto">
-        <source src="blip01.mp3" type="audio/mp3">
-    </audio>
-    <audio id="zenbu" preload="auto">
-        <source src="zenbu.mp3" type="audio/mp3">
-    </audio>
 </head>
 <body>
-    <div class= "quiz_box">
-        <h1>takabobクイズ</h1>
-        <div id="js_question" class="q-box">ここに問題文を書きます</div>
-        <div class="btn_cont">
-            <button id ='answer_btn'>問題1</button>
-            <button id ='answer_btn'>問題2</button>
-            <button id ='answer_btn'>問題3</button>
-            <button id ='answer_btn'>問題4</button>
-        </div>
-        <div id ="js_correct" class="jj">答えを書きます</div>
-        <a href='#' id='next_btn' onclick="next_qestion()">次の問題</a>
-    </div>
+    <!-- 🍔 -->
+    <input id="menu" type="checkbox">
+    <label for="menu" class="open">🍔</label>
+    <label for="menu" class="back"></label>
+    <!-- 🍔 -->
+    <aside>
+        <!-- 🍔 -->
+        <label id="js_start" for="menu" class="close">start</label>
+        <!-- 🍔 -->
+        <nav>
+            <div class="content">
+                <!-- クイズの設定画面です。 -->
+                <ul>
+                    <li>
+                        <label id=""class="l_label" for="">難易度</label>
+                        <!-- <span class="side-span">難易度</span> -->
+                        <select name="" id="js_level">
+                            <option id='label.option' value="すべて">すべて</option>
+                            <option value="★">★</option>
+                            <option value="★★">★★</option>
+                            <option value="★★★">★★★</option>
+                        </select>
+                    </li>
+                    
+                    <li>
+                        <label class="l_label" for="">分野別</label>
+                        <select name="" id="field_list">
+                            <!-- <option value="すべて">すべて</option> -->
+                            <!-- <<option value="★★">10</option> -->
+                            <!-- <option value="★★★">15</option> --> 
+                        </select>
+                    </li>
 
+                    <!-- <li>
+                        <label class="l_label" for="">タイム</label>
+                        <select name="" id="le_list">
+                            <option value="★">5</option>
+                            <option value="★★">10</option>
+                            <option value="★★★">15</option>
+                        </select>
+                    </li> -->
+                </ul>
+                <img class="takabobo_img" src="takabobo_image.png" alt="たかぼぼの画像です">
+        </nav>
+        
+    </aside>
 
-    <!-- 一番最後に記述します。 -->
-    <script src="app.js"></script>
-</body> 
-</html>
+    <main>
+      
+        <h1>タカボボクイズ</h1>
+            
+
+            <!-- 問題を表示させる -->
+            <div id='js_question'>ここに問題を表示させます</div>
+            
+            <!-- 選択肢のボタンを4つつける -->
+            <div id="js_answer">
+                <button type="submit" id='js_button'>ボタン1</button>
+                <button type="submit" id='js_button'>ボタン2</button>
+                <button type="submit" id='js_button'>ボタン3</button>
+                <button type="submit" id='js_button'>ボタン4</button>
+            </div>
+            <!-- タイマーの表示をさせる -->
+            <!-- <div id="js_time">0　時間を表示させます</div> -->
+            <div>
+                <!-- <button id="next_btn">次の問題へ</button> -->
+            </div>            
+            <div id='back_menu'><a href="index.html">メニュー</a></div>
+
+            <div class="quiz_content">
+                
+                <div class="quiz_info">
+                        <li>
+                            <ol>
+                                <label for="">【レベル】</label>
+                                <div id="js_level_see">★を表示</div>
+                            </ol>
+                            <ol>
+                                <label for="">【分野】</label>
+                                <div id="js_field_see">分野を表示</div>
+                            </ol>
+                        </li>
+                </div>
+    </main>
+        <script src="app.js"></script>
+        <!-- <script src="test.js"></script> -->
+    </body>
+    </html>
