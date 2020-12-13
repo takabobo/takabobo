@@ -1033,7 +1033,7 @@ limt_time();
 const set_time = () => {
     for (i = 1; i < $time_set.length; i++) {
         if ($time_set[0].selected == true) {
-            alert('制限時間がないけどスタート');
+            // alert('制限時間がないけどスタート');
             return;
         };
         if ($time_set[i].selected == true) {
