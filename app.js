@@ -1211,8 +1211,8 @@ $start_quiz.addEventListener('click', () => {
 
 
 // 時間をスタートさせる
+let t = set_time();
 const startTime = () => {
-    let t = set_time();
     // return t;
     console.log('⭕', t);
     let set_inter = setInterval(function () {
