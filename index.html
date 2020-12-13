@@ -10,7 +10,7 @@
     <!-- 🍔 -->
     <input id="menu" type="checkbox">
     <label for="menu" class="open">🍔</label>
-    <label for="menu" class="back"></label>
+    <label for="menu" class=s"back"></label>
     <!-- 🍔 -->
     <aside>
         <!-- 🍔 -->
@@ -20,6 +20,19 @@
             <div class="content">
                 <!-- クイズの設定画面です。 -->
                 <ul>
+                    <!-- 時間の設定　 -->
+                    <li>
+                        <label for="">時間</label>
+                        <select name="" id="time_set">
+                            <option value="">制限時間を選択してね😊</option>
+                        </select>
+                    </li>
+
+                    <li id="">
+                        <label id=""class="l_label" for="">問題数</label>
+                        <select name="" id="js_question_len">
+                        </select>
+                    </li>
                     <li>
                         <label id=""class="l_label" for="">難易度</label>
                         <!-- <span class="side-span">難易度</span> -->
@@ -74,12 +87,24 @@
             <div>
                 <!-- <button id="next_btn">次の問題へ</button> -->
             </div>            
-            <div id='back_menu'><a href="index.html">メニュー</a></div>
-
+            
             <div class="quiz_content">
                 
                 <div class="quiz_info">
-                        <li>
+                    <li>
+                        <ol>
+                            
+                            <div id='back_menu'><a href="index.html">メニュー</a></div>
+                        </ol>
+                        <ol>
+                            <div id="js_time_set">時間</div>
+                        </ol>
+                        <ol>
+                                <label for="">【問題数】</label>
+                                <div id="js_quesiton_see">★を表示</div>
+                                <div id="js_quesiton_see2">総問題数</div>
+                                
+                            </ol>
                             <ol>
                                 <label for="">【レベル】</label>
                                 <div id="js_level_see">★を表示</div>
